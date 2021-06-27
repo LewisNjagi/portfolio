@@ -1,6 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-custom">
+{% load bootstrap4 %}
+
+<nav class="navbar navbar-expand-lg navbar-custom" id="navbar_top">
     <img src="../static/img/Jack Watkins — Brand Studio.png" height="200" width="150" class="imagelogo"  alt="">
-    <a class="navbar-brand mt-2" href="#">LEWIS</a>
+    <a class="navbar-brand mt-1" href="#">LEWIS</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -8,13 +10,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav navbar-center">
             <li class="nav-item active">
-                <a class="nav-link" style="color: black;" href="#">HOME<span class="sr-only">(current)</span></a>
+                <a class="nav-link" style="color: black;" href="/">HOME<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: black;" href="#">ABOUT</a>
+                <a class="nav-link" style="color: black;" href="#body">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: black;" href="#">PORTFOLIO</a>
+                <a class="nav-link" style="color: black;" href="#parallax">PORTFOLIO</a>
             </li>
             <!-- <li class="nav-item">
                 <a class="nav-link" style="color: black;" href="#">CONTACT</a>
@@ -27,7 +29,7 @@
 
     <div class="icons mr-5">
 
-        <button type="button" class="btn btn1">CONTACT</button>
+        <a href="#footer"><button type="button" class="btn btn1">CONTACT</button></a> 
 
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin ml-3"
             viewBox="0 0 16 16">
@@ -42,3 +44,4 @@
     </div>
 
 </nav>
+

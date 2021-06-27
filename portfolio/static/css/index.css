@@ -1,5 +1,23 @@
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.navbar {
+  -webkit-transition: height 0.5s, line-height 0.5s;
+  transition: height 0.5s, line-height 0.5s;
+}
+.scrolled-nav {
+  height: 60px !important;
+  line-height: 60px !important;
+}
+.counter {
+  width: 20px;
+  height: 20px;
+  background: black;
+  color: #fff;
+  position: fixed;
+  top: 120px;
+  right: 0;
 }
 .navbar-custom {
   background-color: white;
@@ -7,8 +25,8 @@ html {
 }
 .navbar-brand {
   color: black;
-  font-size: 30px;
-  font-family: 'Spartan', sans-serif;
+  font-size: 25px;
+  font-family: "Spartan", sans-serif;
   position: absolute;
   padding-left: 100px;
 }
@@ -19,6 +37,7 @@ html {
   height: 540px;
   overflow: hidden;
   /* border: solid red 2px; */
+  border-bottom: solid black 1px;
 }
 .image img {
   width: 100%;
@@ -50,6 +69,10 @@ html {
   transition: all 0.3s ease 0s;
   padding: 13px;
   font-size: 20px;
+}
+.btn1:hover {
+  background-color: black;
+  color: white;
 }
 #navbarNav ul li a {
   padding: 20px;
@@ -130,11 +153,12 @@ html {
 }
 .name {
   font-size: 70px;
-  font-family: 'Spartan', sans-serif;
+  font-family: "Spartan", sans-serif;
   letter-spacing: 0px;
+  color: white;
 }
 .body {
-  border: solid black 2px;
+  border: solid black 1px;
   height: 100px;
   width: 70%;
   margin-top: -50px;
@@ -148,11 +172,10 @@ html {
 }
 .language {
   float: left;
-  width: 33.33%;
   margin-top: 9px;
 }
 .language img {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%); 
   filter: grayscale(100%);
 }
 .language img:hover {
@@ -161,4 +184,152 @@ html {
 }
 * {
   box-sizing: border-box;
+}
+
+.eight {
+  /* border: solid blue 2px; */
+  background-color: #e6e6e6;
+}
+.about {
+  height: 400px;
+  margin-top: 100px;
+}
+.self {
+  font-family: "Spartan", sans-serif;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+.lorem {
+  width: 600px;
+  /* border: solid red 2px; */
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.parallax {
+  background-image: url(../img/ilya-pavlov-OqtafYT5kTw-unsplash.jpg);
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.folio {
+  font-size: 50px;
+  color: #e2e2e2;
+  text-align: center;
+  padding-top: 80px;
+  font-family: "Spartan", sans-serif;
+}
+.cards {
+  height: 600px;
+}
+
+.touch {
+  border-radius: 0 !important;
+  background-color: white !important;
+  color: black;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 29px;
+}
+.hood {
+  height: 130px;
+  width: 350px;
+  background-color: #e6e6e6;
+  margin-top: 10px;
+}
+.title {
+  font-family: "Spartan", sans-serif;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.titlelang {
+  font-family: "Barlow Condensed", sans-serif;
+  padding-left: 10px;
+}
+.visit {
+  border-radius: 0 !important;
+  background-color: #909091 !important;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  margin-top: -70px;
+  margin-left: 250px;
+  letter-spacing: 3px;
+}
+.visit:hover {
+  background-color: #a2a2a2 !important;
+  color: white;
+
+}
+.oneproject:hover {
+  border-left: solid black 2px;
+}
+.oneproject {
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.footer {
+  height: 450px;
+  /* border: solid red 2px; */
+  margin-top: 200px;
+  background-color: #6f7180;
+  overflow: auto;
+}
+.me {
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  font-family: "Spartan", sans-serif;
+}
+.details {
+  margin-top: 50px;
+  font-family: "Spartan", sans-serif;
+
+}
+.details h2 {
+  padding-top: 10px;
+}
+.names {
+  border-radius: 0 !important;
+  background: none !important;
+  color: white;
+  width: 400px;
+}
+.form-control {
+  background: transparent;
+  border-radius: 0 !important;
+  box-shadow: none;
+  border-color: white !important;
+  color: black;
+}
+.form-control:focus, .form-control:active {
+  background: transparent;
+  box-shadow: none;
+  border-color: white !important;
+  border-bottom: solid white 3px;
+  color: white;
+  font-family: "Spartan", sans-serif
+}
+.link svg {
+  padding-left: 3px;
+}
+.send {
+  border-radius: 0 !important;
+  background-color: white !important;
+  color: black;
+  text-align: center;
+  /* width: 400px; */
+}
+.send:hover {
+  background: transparent !important;
+  color: white;
+  border: solid white 1px;
+}
+.intro i {
+  color: white !important;
+  font-size: 20px;
 }

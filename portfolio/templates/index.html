@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/all.css' %}">
 <link rel="stylesheet" href="{% static 'css/index.css' %}">
 
 {% endblock%}
@@ -30,17 +31,21 @@
 
     <div class="col-6">
         <h1 class="hi" style="font-family: Roboto Mono, monospace;">Hi</h1>
-        <div class="intro">
 
+        <div class="intro">
+            <!-- <i class="fab fa-black-tie"></i> -->
             <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
                 class="bi bi-chat-right-fill" viewBox="0 0 16 16">
                 <path
                     d="M14 0a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
             </svg>
-            <h2 style="font-family: Barlow Condensed, sans-serif; margin-top: 0px;">I'm <span class="name">Lewis Njagi</span><br> </h2>
-            <h2 style="font-family: Barlow Condensed, sans-serif;">Web <span class="highlight">Developer</span>,</h2>
+            <h2 style="font-family: Barlow Condensed, sans-serif; margin-top: 0px;">I'm <span class="name">Lewis
+                    Njagi</span><br> </h2>
+            <h2 style="font-family: Barlow Condensed, sans-serif;"><span class="highlight">Full Stack </span><span
+                    class="highlight">Developer</span>,</h2>
             <h2 style="font-family: Barlow Condensed, sans-serif;"><span class="highlight">Moringa</span> School
-                Graduate,</h2>
+                Alumni,</h2>
+            <!-- <button type="button" class="btn touch">Get in touch</button> -->
             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt"
                 viewBox="0 0 16 16" style="float: left; margin-top: 18px; margin-right: 5px;">
                 <path
@@ -50,27 +55,220 @@
             <h2 style="font-family: Barlow Condensed, sans-serif;"> Nairobi, <span class="highlight">Kenya</span></h2> -->
         </div>
     </div>
+    <div class="vl"></div>
+
     <div class="col-6">
         <div class="logo"></div>
     </div>
 </div>
-<div class="container body">
+<div class="container body" id="body">
     <div class="language">
-        <img src="../static/img/django-logo-big.png" style="margin-left: 10px;" height="80" width="130" alt="">
+        <img src="../static/img/5848152fcef1014c0b5e4967.png" style="margin-left: 50px;" height="80" width="auto" alt="">
     </div>
     <div class="language">
-        <img src="../static/img/main-qimg-b6e373a8a749aa031d693c5c275e81f4.png" style="margin-left: -100px;" height="80" width="130" alt="">
+        <img src="../static/img/javascript-logo-transparent-logo-javascript-images-3.png"
+            style="margin-left: 50px;" height="80" width= "auto" alt="">
     </div>
     <div class="language">
-        <img src="../static/img/flask (1).png" style="margin-left: -230px;" height="80" width="130" alt="">
+        <img src="../static/img/1_RmhCkNR30Ecf6xox3GrOlw.png" style="margin-left: 50px;" height="80" width="auto"
+            alt="">
     </div>
-    <!-- <div class="language">
-        <img src="../static/img/flask (1).png" style="margin-left: 510px;" height="80" width="160" alt="">
-    </div> -->
+    <div class="language">
+        <img src="../static/img/1200px-PHP-logo.svg (1).png" style="margin-left: 50px;" height="80" width="auto" alt="">
+    </div>
 </div>
-<div class="vl"></div>
 
 
-<div class="container"></div>
+<div class="container">
+    <div class="row about" id="about">
+        <div class="col-5 four">
 
+        </div>
+        <div class="col-7 eight">
+            <h2 class="self"><span style="border-bottom: solid black 1px;">About Myself</span></h2>
+            <div class="lorem">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat doloribus qui, rem tenetur vel
+                    inventore
+                    neque quam ipsa sed vero consequatur numquam quidem deleniti? Et sequi rem ea eos illum. Lorem ipsum
+                    dolor sit amet consectetur, adipisicing elit. Aliquid quidem provident expedita optio saepe eius
+                    accusantium, molestias cum deserunt, quas eveniet ipsam corporis dolorum dicta explicabo enim quo
+                    porro reiciendis!</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="parallax" id="parallax">
+    <h2 class="folio"><span style="border-bottom: solid white 1px;">Portfolio</span></h2>
+</div>
+<div class="container cards">
+    <div class="row column">
+        <div class="col-4 project">
+
+            <div class="oneproject">
+                <img src="../static/img/Screenshot from 2021-06-26 19-47-17.png" height="180" width="350" alt="...">
+                <div class="hood">
+                    <h4 class="title">Blog Website</h4>
+                    <h4 class="titlelang">-Flask-</h4>
+                    <a href="https://bloggers-app-website.herokuapp.com/"><button type="button"
+                            class="btn visit">Visit</button></a>
+                </div>
+            </div>
+
+            <div class="oneproject">
+                <img src="../static/img/Screenshot from 2021-05-04 12-26-57.png" height="180" width="350" alt="...">
+                <div class="hood">
+                    <h4 class="title">Neighborhood</h4>
+                    <h4 class="titlelang">-Django-</h4>
+                    <a href="https://mtaanii.herokuapp.com/"><button type="button" class="btn visit">Visit</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 project">
+
+            <div class="oneproject">
+                <img src="../static/img/Screenshot from 2021-06-27 16-58-42.png" height="180" width="350" alt="...">
+                <div class="hood">
+                    <h4 class="title">Awwards</h4>
+                    <h4 class="titlelang">-Django-</h4>
+                    <a href="https://awwardsa.herokuapp.com/"><button type="button" class="btn visit">Visit</button></a>
+                </div>
+            </div>
+
+            <div class="oneproject">
+                <img src="../static/img/Screenshot from 2021-06-27 17-37-11.png" height="180" width="350" alt="...">
+                <div class="hood">
+                    <h4 class="title">News App</h4>
+                    <h4 class="titlelang">-Flask-</h4>
+                    <a href="https://wen-news-app.herokuapp.com/"><button type="button"
+                            class="btn visit">Visit</button></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-4 project">
+
+            <div class="oneproject">
+                <img src="../static/img/Screenshot from 2021-06-27 17-12-36.png" height="180" width="350" alt="...">
+                <div class="hood">
+                    <h4 class="title">Instagram</h4>
+                    <h4 class="titlelang">-Django-</h4>
+                    <a href="https://clonensta.herokuapp.com/"><button type="button"
+                            class="btn visit">Visit</button></a>
+                </div>
+            </div>
+
+            <div class="oneproject">
+                <img src="../static/img/Screenshot from 2021-06-27 17-44-04.png" height="180" width="350" alt="...">
+                <div class="hood">
+                    <h4 class="title">Github Search</h4>
+                    <h4 class="titlelang">-Angular-</h4>
+                    <a href="https://lewisnjagi.github.io/github-search/"><button type="button"
+                            class="btn visit">Visit</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid footer" id="footer">
+    <h2 class="me"><span style="border-bottom: solid white 1px;">Contact Me</span></h2>
+    <div class="row" style="height: 350px;">
+        <div class="col-4">
+            <div class="details">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt"
+                    viewBox="0 0 16 16"
+                    style="float: left; margin-top: 18px; margin-right: 3px; margin-left: 48px; color: white;">
+                    <path
+                        d="M12.166 8.94c-.524 1.062-1.234  2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
+                <h2 style="font-family: Barlow Condensed, sans-serif; padding-left: 50px; color: white;"> Nairobi, Kenya
+                </h2>
+                <h2 style="font-family: Barlow Condensed, sans-serif; padding-left: 50px; color: white;">
+                    lewismaybach@gmail.com</h2>
+                <h2 style="font-family: Barlow Condensed, sans-serif; padding-left: 50px; color: white;">+254722380860
+                </h2>
+                <div class="link" style="margin-left: 35px; padding-top: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                        class="bi bi-linkedin ml-3" viewBox="0 0 16 16" style="color: white;">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                        class="bi bi-github ml-2" viewBox="0 0 16 16" style="color: white;">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="details">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4" style="color: white;">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="ff">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4" style="color: white;">Name</label>
+                            <input type="text" class="form-control" placeholder="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1" style="color: white;">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-light send">Send</button>
+                <!-- <button type="button" class="btn btn-light names">Email</button> -->
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                document.getElementById('navbar_top').classList.add('fixed-top');
+                // add padding top to show content behind navbar
+                navbar_height = document.querySelector('.navbar').offsetHeight;
+                document.body.style.paddingTop = 20 + 'px';
+                // document.getElementById("navbar_top").style.padding = "10px 10px";
+            } else {
+                document.getElementById('navbar_top').classList.remove('fixed-top');
+                // remove padding top from body
+                document.body.style.paddingTop = '0';
+            }
+        });
+    });
+    $(document).ready(function () {
+        var scrollTop = 0;
+        $(window).scroll(function () {
+            scrollTop = $(window).scrollTop();
+            $('.counter').html(scrollTop);
+
+            if (scrollTop >= 100) {
+                $('#navbar_top').addClass('scrolled-nav');
+                $('#navbar_top').removeClass('navbar-nav');
+            } else if (scrollTop < 100) {
+                $('#navbar_top').removeClass('scrolled-nav');
+            }
+
+        });
+
+    });
+</script>
+
+
+{% bootstrap_javascript %}
 {% endblock %}
