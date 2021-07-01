@@ -24,7 +24,7 @@ html {
   height: 100px;
 }
 .navbar-brand {
-  color: black;
+  color: inherit !important;
   font-size: 25px;
   font-family: "Spartan", sans-serif;
   position: absolute;
@@ -47,7 +47,7 @@ html {
 }
 .intro {
   margin-left: 100px;
-  margin-top: 100px;
+  margin-top: 40px;
   color: white;
   width: 600px;
   /* border: solid red 2px; */
@@ -124,19 +124,20 @@ html {
   left: 0;
 }
 .vl {
-  border-left: 1px solid white;
+  border-left: 1px solid;
   height: 400px;
   position: absolute;
   left: 50%;
   margin-top: 150px;
   top: 0;
   margin-left: -20px;
+  color: white;
 }
 .hi {
   position: absolute;
   color: black;
   margin-left: 117px;
-  margin-top: 110px;
+  margin-top: 50px;
   font-size: 30px;
 }
 .check {
@@ -148,7 +149,7 @@ html {
   color: black;
 }
 .intro h2 {
-  margin-top: 20px;
+  margin-top: 30px;
   letter-spacing: 8px;
 }
 .name {
@@ -198,6 +199,9 @@ html {
   font-family: "Spartan", sans-serif;
   padding-top: 50px;
   padding-left: 20px;
+}
+.selfname {
+  border-bottom: solid black 1px;
 }
 .lorem {
   width: 600px;
@@ -251,7 +255,7 @@ html {
 }
 .visit {
   border-radius: 0 !important;
-  background-color: #909091 !important;
+  background-color: black !important;
   color: white;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 20px;
@@ -260,7 +264,7 @@ html {
   letter-spacing: 3px;
 }
 .visit:hover {
-  background-color: #a2a2a2 !important;
+  background-color: rgb(41, 41, 41) !important;
   color: white;
 
 }
@@ -276,12 +280,12 @@ html {
   height: 450px;
   /* border: solid red 2px; */
   margin-top: 200px;
-  background-color: #6f7180;
+  background-color: #777777;
   overflow: auto;
 }
 .me {
   text-align: center;
-  color: white;
+  color: black;
   padding-top: 50px;
   font-family: "Spartan", sans-serif;
 }
@@ -332,4 +336,15 @@ html {
 .intro i {
   color: white !important;
   font-size: 20px;
+}
+.icons svg:hover {
+  background-color: black;
+  color: white;
+}
+::-webkit-input-placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+.mecon {
+  border-bottom: solid black 1px;
 }
