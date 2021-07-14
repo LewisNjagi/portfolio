@@ -189,6 +189,10 @@ body.dark-mode .btn1 {
   border: 1px solid white;
   border-radius: 40px;
 }
+body.dark-mode .btn1:hover {
+  color: #000000 !important;
+  background: #fff !important;
+}
 body.dark-mode .icons svg {
   color: #fff !important;
 }
@@ -232,6 +236,9 @@ body.dark-mode .visit {
   background: #fff !important;
   color: #000000 !important;
 }
+body.dark-mode .visit:hover {
+  background: rgb(223, 223, 223) !important;
+}
 body.dark-mode .oneproject:hover {
   border-left: solid white 2px;
 }
@@ -252,4 +259,7 @@ body.dark-mode .me {
 }
 body.dark-mode .mecon {
   border-bottom: solid white 1px;
+}
+body.dark-mode .pass {
+  border: 5px solid black;
 }
